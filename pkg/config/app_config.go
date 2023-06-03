@@ -406,6 +406,11 @@ func GetDefaultConfig() UserConfig {
 					Attach:  true,
 				},
 				{
+					Name:    "start",
+					Command: "{{ .DockerCompose }} start",
+					Attach:  true,
+				},
+				{
 					Name:    "stop",
 					Command: "{{ .DockerCompose }} stop",
 				},
